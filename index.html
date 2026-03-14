@@ -1,275 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glassmorphism - Modern Web Design</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iyed Ferjeoui — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="background-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">IF</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Available for internships & collaborations</div>
+    <h1 class="hero-name">Iyed<br>Ferjeoui</h1>
+    <p class="hero-sub">Computer Science Student · 1st Year<br>Tunisia</p>
+    <div class="hero-line"></div>
+    <p class="hero-desc">
+      Building a foundation in systems programming, networking, and the web.
+      Passionate about understanding how computers really work — from the bottom up.
+    </p>
+    <a href="#contact" class="btn">Get in touch</a>
+    <a href="https://github.com/iyedferjeoui" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>A developer from the ground up.</h2>
+        <p>
+          I'm a first-year Computer Science student based in Tunisia, currently
+          diving deep into the fundamentals — C programming, Linux systems,
+          networking, and the architecture that powers modern software.
+        </p>
+        <p>
+          I believe in learning things properly: understanding memory, pointers,
+          and system calls before moving to abstractions. My portfolio grows with
+          every project I ship.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">1st</span>
+          <span class="stat-label">Year CS</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">TN</span>
+          <span class="stat-label">Tunisia</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav glass-effect">
-            <div class="nav-container">
-                <div class="logo">
-                    <h2>Glassmorphism</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-label">02 — Skills</div>
+    <h2>What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">⚙️</div>
+        <h3>C / C++</h3>
+        <p>Systems programming, memory management, data structures from scratch.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <p>Scripting, automation, and exploring algorithms and logic.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐧</div>
+        <h3>Linux & Bash</h3>
+        <p>Command line fluency, shell scripting, and system administration basics.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Networking</h3>
+        <p>TCP/IP fundamentals, protocols, and how the internet actually works.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <h3>Web (HTML/CSS/JS)</h3>
+        <p>Building clean, functional interfaces and personal projects.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔀</div>
+        <h3>Git & GitHub</h3>
+        <p>Version control, open source contributions, and collaborative workflows.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content glass-card">
-                <h1 class="hero-title">Welcome to the Future of Web Design</h1>
-                <p class="hero-subtitle">Experience the beauty of glassmorphism with translucent interfaces, stunning visual depth, and modern aesthetics.</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary glass-btn">Get Started</button>
-                    <button class="btn btn-secondary glass-btn">Learn More</button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card glass-card">
-                    <div class="card-icon">✨</div>
-                    <h3>Modern Design</h3>
-                    <p>Beautiful glassmorphic interfaces</p>
-                </div>
-                <div class="floating-card glass-card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Performance</h3>
-                    <p>Optimized for speed and efficiency</p>
-                </div>
-                <div class="floating-card glass-card">
-                    <div class="card-icon">💎</div>
-                    <h3>Premium Quality</h3>
-                    <p>Crafted with attention to detail</p>
-                </div>
-            </div>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label">03 — Projects</div>
+    <h2>Things I've built</h2>
+    <div class="projects-list">
+
+      <a href="https://github.com/iyedferjeoui/portfolio" target="_blank" class="project-card">
+        <div class="project-top">
+          <span class="project-lang lang-css">CSS · HTML · JS</span>
+          <span class="project-arrow">↗</span>
         </div>
-    </section>
+        <h3>Personal Portfolio</h3>
+        <p>This website — a clean, minimal portfolio built from scratch with pure HTML, CSS, and JavaScript.</p>
+      </a>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Glassmorphism</h2>
-                <p class="section-subtitle">Discover the art of translucent design</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text glass-card">
-                    <h3>What is Glassmorphism?</h3>
-                    <p>Glassmorphism is a design trend that creates a frosted glass effect using translucency, background blur, and subtle borders. It adds depth and visual hierarchy to interfaces while maintaining a modern, elegant appearance.</p>
-                    <p>This design approach creates a sense of depth and layering that mimics real-world materials, making digital interfaces feel more tangible and engaging.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <span class="feature-icon">🎨</span>
-                            <span>Visual Depth</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">✨</span>
-                            <span>Modern Aesthetics</span>
-                        </div>
-                        <div class="feature">
-                            <span class="feature-icon">📱</span>
-                            <span>Responsive Design</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="glass-showcase">
-                        <div class="showcase-item glass-card">
-                            <div class="showcase-content">
-                                <h4>Translucency</h4>
-                                <p>Semi-transparent backgrounds</p>
-                            </div>
-                        </div>
-                        <div class="showcase-item glass-card">
-                            <div class="showcase-content">
-                                <h4>Blur Effects</h4>
-                                <p>Background blur for depth</p>
-                            </div>
-                        </div>
-                        <div class="showcase-item glass-card">
-                            <div class="showcase-content">
-                                <h4>Subtle Borders</h4>
-                                <p>Light borders for definition</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="project-card project-wip">
+        <div class="project-top">
+          <span class="project-lang lang-c">C</span>
+          <span class="project-wip-badge">Coming Soon</span>
         </div>
-    </section>
+        <h3>C Systems Project</h3>
+        <p>A low-level systems programming project in C. Currently in development — stay tuned.</p>
+      </div>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive design solutions</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card glass-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Create stunning user interfaces with glassmorphic elements that enhance user experience and visual appeal.</p>
-                    <button class="service-btn glass-btn">Learn More</button>
-                </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <p>Build responsive websites with modern glassmorphism effects using cutting-edge CSS and JavaScript techniques.</p>
-                    <button class="service-btn glass-btn">Learn More</button>
-                </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile Apps</h3>
-                    <p>Develop mobile applications with glassmorphic interfaces that work seamlessly across all devices.</p>
-                    <button class="service-btn glass-btn">Learn More</button>
-                </div>
-                <div class="service-card glass-card">
-                    <div class="service-icon">🚀</div>
-                    <h3>Brand Identity</h3>
-                    <p>Create cohesive brand experiences using glassmorphism principles for a modern, professional look.</p>
-                    <button class="service-btn glass-btn">Learn More</button>
-                </div>
-            </div>
+      <a href="https://github.com/iyedferjeoui/AH8RDP-1" target="_blank" class="project-card">
+        <div class="project-top">
+          <span class="project-lang lang-bat">Batchfile</span>
+          <span class="project-arrow">↗</span>
         </div>
-    </section>
+        <h3>AH8RDP-1</h3>
+        <p>A batch scripting project with community interest — forked and improved with active contributions.</p>
+      </a>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Showcase of glassmorphic designs</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item glass-card">
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay glass-effect">
-                            <h4>E-commerce Platform</h4>
-                            <p>Modern shopping experience</p>
-                            <button class="portfolio-btn glass-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item glass-card">
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay glass-effect">
-                            <h4>Dashboard Design</h4>
-                            <p>Analytics and data visualization</p>
-                            <button class="portfolio-btn glass-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item glass-card">
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay glass-effect">
-                            <h4>Mobile App</h4>
-                            <p>Social media platform</p>
-                            <button class="portfolio-btn glass-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item glass-card">
-                    <div class="portfolio-image">
-                        <div class="portfolio-overlay glass-effect">
-                            <h4>Landing Page</h4>
-                            <p>SaaS product showcase</p>
-                            <button class="portfolio-btn glass-btn">View Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's create something amazing together</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form glass-card">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" class="form-input glass-input" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" class="form-input glass-input" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject" class="form-input glass-input" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" class="form-input glass-input" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary glass-btn">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">📧</div>
-                        <h4>Email</h4>
-                        <p>hello@glassmorphism.com</p>
-                    </div>
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">📱</div>
-                        <h4>Phone</h4>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="contact-item glass-card">
-                        <div class="contact-icon">📍</div>
-                        <h4>Location</h4>
-                        <p>San Francisco, CA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-label">04 — Contact</div>
+    <div class="contact-wrap">
+      <h2>Let's connect.</h2>
+      <p>I'm open to internship opportunities, collaborations, or just a chat about tech and CS.</p>
+      <a href="mailto:iyedferjeoui6@gmail.com" class="btn">iyedferjeoui6@gmail.com</a>
+      <a href="https://github.com/iyedferjeoui" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer glass-effect">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Glassmorphism. All rights reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link glass-btn">Twitter</a>
-                    <a href="#" class="social-link glass-btn">LinkedIn</a>
-                    <a href="#" class="social-link glass-btn">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2026 Iyed Ferjeoui</span>
+    <span>Built with HTML, CSS & JS</span>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
