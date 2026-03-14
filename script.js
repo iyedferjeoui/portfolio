@@ -1,4 +1,3 @@
-// ── Active nav link on scroll ──────────────────────
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -17,7 +16,6 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(s => observer.observe(s));
 
-// ── Scroll-reveal for cards ────────────────────────
 const cards = document.querySelectorAll('.skill-card, .project-card, .stat');
 
 const revealObserver = new IntersectionObserver((entries) => {
