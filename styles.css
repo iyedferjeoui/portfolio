@@ -392,3 +392,100 @@ a.project-card:hover .project-arrow { transform: translate(2px, -2px); }
   .skills-grid, .projects-list { grid-template-columns: 1fr; }
   .hero-name { font-size: 3.5rem; }
 }
+
+/* ─── SKILL HIGHLIGHT & BADGE ───────────────────── */
+.skill-highlight {
+  border-color: var(--fg);
+  background: var(--bg-alt);
+}
+
+.skill-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.15rem 0.5rem;
+  border-radius: 100px;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+/* ─── EDUCATION ─────────────────────────────────── */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.edu-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 2rem 1.8rem;
+  background: var(--bg);
+  transition: box-shadow 0.2s;
+}
+
+.edu-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.edu-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.edu-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  letter-spacing: 0.06em;
+}
+
+.edu-status {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+}
+
+.edu-done {
+  background: #d1fae5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+.edu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.edu-place {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.edu-desc {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  line-height: 1.7;
+}
+
+/* ─── CONTACT LINKS ─────────────────────────────── */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lang-python { background: #fef9c3; color: #854d0e; }
